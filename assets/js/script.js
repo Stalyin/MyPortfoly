@@ -38,7 +38,7 @@ buttons.forEach((button, index) => {
 
 // portfolio fillter
 
-var mixer = mixitup(".portfolio-gallery", {
+const mixer = mixitup(".portfolio-gallery", {
   selectors: {
     target: ".portfolio-box",
   },
@@ -49,7 +49,7 @@ var mixer = mixitup(".portfolio-gallery", {
 
 // Initialize swiperjs
 
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
