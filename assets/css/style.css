@@ -730,7 +730,7 @@ section {
 }
 
 .character2 {
-  max-width: 20rem; /* Ancho máximo deseado */
+  width: 20rem; /* Ancho máximo deseado */
   max-height: 20rem; /* Altura máxima deseada */
   width: auto; /* Ancho automático */
   height: auto; /* Altura automática */
@@ -1488,9 +1488,14 @@ footer {
 
 /* Estilo para las imágenes */
 .dropdown-content img {
-  margin-left: 8px; /* Espacio entre el texto y la imagen */
-  width: 20px; /* Tamaño de la imagen */
+  margin-left: 8px;
+  width: 20px;
   height: 15px;
+}
+
+.avatar-container model-viewer {
+  width: 600px;
+  height: 600px;
 }
 /* @KEYFRAMES/ */
 
@@ -1591,7 +1596,7 @@ footer {
 
 /* BREACKPOINTS */
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   html {
     font-size: 95%;
   }
@@ -1605,7 +1610,7 @@ footer {
   }
 }
 
-@media (max-width: 991px) {
+@media (width <= 991px) {
   .home {
     text-align: center;
   }
@@ -1678,13 +1683,14 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .about {
     text-align: center;
   }
 
-  .avatar-container {
-    display: none;
+  .avatar-container model-viewer {
+    width: 350px;
+    height: 450px;
   }
 
   .proposal {
@@ -1741,7 +1747,7 @@ footer {
   }
 }
 
-@media (max-width: 680px) {
+@media (width <= 680px) {
   .about {
     text-align: center;
   }
@@ -1800,7 +1806,7 @@ footer {
   }
 }
 
-@media (max-width: 530px) {
+@media (width <= 530px) {
   .img-hero img {
     margin-top: 2rem;
   }
@@ -1814,6 +1820,37 @@ footer {
   .about-img .card {
     width: 20rem;
     margin: auto;
+  }
+
+  .img-hero {
+    position: relative;
+    width: 100%;
+  }
+
+  .rotate-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    margin-top: 3.7rem;
+    margin-left: -2.2rem;
+  }
+
+  .rotate-text span {
+    width: 295px;
+    height: 295px;
+  }
+
+  .rotate-text .text {
+    width: 320px;
+    height: 320px;
+    background: #f2f6fb;
+  }
+
+  .img-hero {
+    margin-left: 3rem;
   }
 
   .about-img .cover-image {
@@ -1830,12 +1867,7 @@ footer {
   .input-box input {
     width: 100%;
   }
-  .rotate-text {
-    display: none;
-  }
-  .img-hero img {
-    width: 100%;
-  }
+
   .text-animate {
     width: 23.8rem;
   }
@@ -1856,7 +1888,7 @@ footer {
   }
 }
 
-@media (max-width: 460px) {
+@media (width <= 460px) {
   html {
     font-size: 70%;
   }
@@ -1870,9 +1902,7 @@ footer {
   .input-box input {
     width: 100%;
   }
-  .rotate-text {
-    display: none;
-  }
+
   .img-hero img {
     width: 100%;
     margin-left: -5rem;
@@ -1897,5 +1927,8 @@ footer {
   }
 }
 
-@media (max-width: 380px) {
+@media (width <= 390px) {
+  .rotate-text {
+    display: none;
+  }
 }

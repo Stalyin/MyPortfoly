@@ -116,25 +116,6 @@ window.addEventListener("scroll", activeMenu);
 
 // scroll reveal
 
-ScrollReveal({
-  distance: "90px",
-  duration: 2000,
-  delay: 200,
-  // reset: true ,
-});
-
-ScrollReveal().reveal(".hero-info,.main-text,.proposal,.heading", {
-  origin: "top",
-});
-ScrollReveal().reveal(".about-img,.fillter-buttons,.contact-info", {
-  origin: "left",
-});
-ScrollReveal().reveal(".about-content,.skills", { origin: "right" });
-ScrollReveal().reveal(
-  ".allServices,.portfolio-gallery,.blog-box,footer,.img-hero",
-  { origin: "bottom" }
-);
-
 // skills/
 const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
 const skillsBox = document.querySelector("[data-skills-box]");
@@ -173,10 +154,21 @@ toolsBtn.addEventListener("click", function () {
     skillsBtn.classList.add("active");
   }
 });
-
 const moonBtn = document.querySelector(".btn");
+const moonIcon = moonBtn.querySelector("i");
+
 moonBtn.addEventListener("click", function () {
   document.body.classList.toggle("dark-theme");
+
+  // Cambiar el icono del botón
+  if (moonIcon.classList.contains("bx-moon")) {
+    moonIcon.classList.remove("bx-moon");
+    moonIcon.classList.add("bx-sun");
+  } else {
+    moonIcon.classList.remove("bx-sun");
+    moonIcon.classList.add("bx-moon");
+  }
+
   console.log("Botón de luna clicado");
 });
 
