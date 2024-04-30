@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/Favicon.png" type="image/x-icon" />
+
+    <!-- boxicon css link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+
+    <div class="overlay"></div>
+
+    <!-- NAVEGADOR LISTA -->
+
+    <header>
+      <a href="#" class="logo"><span>AC</span>-CODE</a>
+      <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="right-header">
+        <div class="dropdown">
+          <button class="dropbtn">Language</button>
+          <div class="dropdown-content">
+            <a href="#asd"
+              ><span>Ingles</span
+              ><img src="assets/img/banderas/usa.svg" alt="Inglés"
+            /></a>
+            <a href="spanish.html"
+              ><span>Español</span
+              ><img src="assets/img/banderas/latino.svg" alt="Español"
+            /></a>
+            <a href="chinese.html"
+              ><span>Chino</span
+              ><img src="assets//img/banderas/china.svg" alt="Chino"
+            /></a>
+          </div>
+        </div>
+
+        <a href="#asd" class="btn"><i class="bx bx-moon"></i></a>
+        <div class="menu-icon">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- FIN DE LISTA DE NAVEGADOR -->
+
+    <!-- SECCION DE INICIO -->
+
+    <section class="home" id="home">
+      <div class="hero-info">
+        <h1>Hi I'm Cristian</h1>
+
+        <div class="text-animate">
+          <h2>Fronted Developer</h2>
+        </div>
+
+        <p>
+          "Student and Aspiring Full Stack Developer Welcome to my website!"
+        </p>
+
+        <div class="btn-box">
+          <!-- ENVIO DE CORREO -->
+          <a href="mailto:stalyin16@gmail.com" class="btn" onclick="openEmail()"
+            >Hire Me ! <i class="bx bx-right-arrow-alt"></i
+          ></a>
+
+          <!-- DESCARGA DE CV -->
+
+          <a href="assets/docs/CV.pdf" target="_blank" class="btn d-CV"
+            >Download CV <i class="bx bx-download"></i
+          ></a>
+        </div>
+
+        <!-- ICONOS DE REDES -->
+
+        <div class="social-media">
+          <div class="bg-icon">
+            <a href="#acads"><i class="bx bxl-facebook"></i></a>
+            <span></span>
+          </div>
+
+          <div class="bg-icon">
+            <a href="#acasd"><i class="bx bxl-github"></i></a>
+            <span></span>
+          </div>
+
+          <div class="bg-icon">
+            <a
+              href="https://wa.me/+593963313195?text=Hola%20necesito%20información%20acerca%20de%20su%20servicio"
+              target="_blank"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+            <span></span>
+          </div>
+
+          <div class="bg-icon">
+            <a
+              href="mailto:stalyin16@gmail.com"
+              onclick="openEmail()"
+              target="_blank"
+              ><i class="bx bx-envelope"></i
+            ></a>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-hero">
+        <img src="assets/img/white.png" alt="" />
+        <div class="rotate-text">
+          <div class="text">
+            <p></p>
+          </div>
+          <span><i></i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIN SECCION DE INICIO -->
+
+    <!-- SECCION SOBRE MI -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <div class="card">
+          <div class="wrapper">
+            <img src="assets/img/carta.png" class="cover-image" />
+          </div>
+
+          <div class="card" id="scrollCard">
+            <div class="avatar-container" id="container">
+              <model-viewer
+                id="avatar-model"
+                src="6615bda2e5acc0912eeac70b (1).glb"
+                alt="Avatar 3D"
+                autoplay
+                auto-rotate
+                style="width: 600px; height: 600px"
+              ></model-viewer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About Me</h2>
+        <p>
+          "Hello! I'm Cristian, a passionate programmer and web developer.
+          Currently, I'm immersed in the fascinating world of technology,
+          exploring new tools and techniques to enhance my skills as a web
+          developer. I love tackling creative challenges and finding innovative
+          solutions to complex problems."
+        </p>
+        <div class="about-btn">
+          <button class="active">Main Skills</button>
+          <button>Soft Skills</button>
+          <button>Education</button>
+        </div>
+        <div class="content-btn">
+          <div class="content">
+            <div class="text-box">
+              <p>Programming Fundamentals</p>
+              <span
+                >I demonstrate basic understanding of key programming
+                concepts.</span
+              >
+            </div>
+            <div class="text-box">
+              <p>Basic Web Development</p>
+              <span
+                >I show familiarity with HTML, CSS, and possibly introductory
+                JavaScript.</span
+              >
+            </div>
+            <div class="text-box">
+              <p>Basic Problem-solving</p>
+              <span>
+                I demonstrate ability to solve simple programming problems
+                effectively.</span
+              >
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="text-box">
+              <p>Problem-solving</p>
+              <span>Solving programming problems effectively.</span>
+            </div>
+            <div class="text-box">
+              <p>Team collaboration</p>
+              <span>Working well in team environments.</span>
+            </div>
+            <div class="text-box">
+              <p>Self-directed learning</p>
+              <span>Learning independently through personal projects. </span>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="text-box">
+              <p>Online Courses and Bootcamps</p>
+              <span>Academlo</span>
+            </div>
+            <div class="text-box">
+              <p>Internships</p>
+              <span>Website , colaborations, ...</span>
+            </div>
+            <div class="text-box">
+              <p>Self-taught Education</p>
+              <span>Frontend Programming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIN SECCION SOBRE MI -->
+
+    <!-- SECCION DE SERVICIOS -->
+
+    <section class="services" id="services">
+      <div class="main-text">
+        <h2 class="heading">My Services</h2>
+        <span>what i will do for you</span>
+      </div>
+
+      <div class="allServices">
+        <div class="servicesItem">
+          <div class="icon-services">
+            <i class="bx bx-layer"></i>
+            <span></span>
+          </div>
+          <h3>Responsive Web Design</h3>
+          <p>
+            I craft websites that look great on mobile devices for an optimal
+            user experience across all screens.
+          </p>
+          <a href="#" class="readMore">Read More</a>
+        </div>
+
+        <div class="servicesItem">
+          <div class="icon-services">
+            <i class="bx bx-code-alt"></i>
+            <span></span>
+          </div>
+          <h3>Basic Online Store Development</h3>
+          <p>
+            I offer services to build simple online stores using popular
+            platforms like Shopify, WooCommerce, or Squarespace.
+          </p>
+          <a href="#" class="readMore">Read More</a>
+        </div>
+
+        <div class="servicesItem">
+          <div class="icon-services">
+            <i class="bx bx-desktop"></i>
+            <span></span>
+          </div>
+          <h3>UI / UX Design</h3>
+          <p>
+            I design attractive and user-friendly interfaces to ensure an
+            intuitive and enjoyable browsing experience..
+          </p>
+          <a href="#" class="readMore">Read More</a>
+        </div>
+
+        <div class="servicesItem">
+          <div class="icon-services">
+            <i class="bx bxs-party"></i>
+            <span></span>
+          </div>
+          <h3>Blog Creation and Content Management</h3>
+          <p>
+            Specializing in creating and managing blogs to promote businesses
+            through relevant and engaging content.
+          </p>
+          <a href="#" class="readMore">Read More</a>
+        </div>
+      </div>
+
+      <div class="proposal">
+        <div class="text-box">
+          <span>Get it in one touch</span>
+          <h3>I have a project in mind</h3>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <img src="assets/img/support.png" class="first" />
+      </div>
+
+      <div class="showcase">
+        <img src="assets/img/shapes/ring.png" class="ring" />
+        <img src="assets/img/shapes/circle.png" class="circle" />
+        <img src="assets/img/shapes/circle.png" class="circle2" />
+        <img src="assets/img/shapes/circle.png" class="circle3" />
+        <img src="assets/img/shapes/half-ring.png" class="half-ring" />
+      </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <h2 class="heading">My Portfolio</h2>
+        <span>check it out!</span>
+      </div>
+      <div class="fillter-buttons">
+        <button class="button mixitup-control-active" data-filter="all">
+          All Work
+        </button>
+        <button class="button" data-filter=".web">Web Development</button>
+        <button class="button" data-filter=".uiux">UI/UX Design</button>
+        <button class="button" data-filter=".branding">Branding Design</button>
+      </div>
+
+      <div class="portfolio-gallery">
+        <div class="portfolio-box mix uiux">
+          <div class="portfolio-content">
+            <h3>UI/UX Design</h3>
+            <p>Pleasing interfaces, with both light and dark themes.</p>
+            <a href="#sad" class="readMore">Explore More</a>
+          </div>
+          <div class="portfolio-img">
+            <img src="assets/img/blog/diseno.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-box mix web">
+          <div class="portfolio-content">
+            <h3>Maintenance and Updates</h3>
+            <p>Website maintenance for proper functioning.</p>
+            <a href="#asd" class="readMore">Explore More</a>
+          </div>
+          <div class="portfolio-img">
+            <img src="assets/img/blog/codigo.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-box mix web">
+          <div class="portfolio-content">
+            <h3>Responsive Web Design</h3>
+            <p>
+              Website designed to adapt and function optimally across a variety
+              of devices.
+            </p>
+            <a href="#asd" class="readMore">Explore More</a>
+          </div>
+          <div class="portfolio-img">
+            <img src="assets/img/blog/mobile.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-box mix web">
+          <div class="portfolio-content">
+            <h3>Sales Systems</h3>
+            <p>
+              Sales systems developed to assist in sales and inventory control
+            </p>
+            <a href="#asd" class="readMore">Explore More</a>
+          </div>
+          <div class="portfolio-img">
+            <img src="assets/img/blog/sistema.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-box mix uiux">
+          <div class="portfolio-content">
+            <h3>UI/UX Design</h3>
+            <p>Web development with ease of use.</p>
+            <a href="#asd" class="readMore">Explore More</a>
+          </div>
+          <div class="portfolio-img">
+            <img src="assets/img/blog/desin3d.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-box mix branding">
+          <div class="portfolio-content">
+            <h3>Brand Development</h3>
+            <p>
+              Branding work including logo design, color palettes, typography,
+              and other visual elements.
+            </p>
+            <a href="#asd" class="readMore">Explore More</a>
+          </div>
+          <div class="portfolio-img">
+            <img src="assets/img/blog/elaboracion.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIN PORTAFOLIO -->
+
+    <!-- MIS SKILLS -->
+
+    <!-- SECCION DE CONTACTO/ -->
+
+    <section class="down-box" id="contact">
+      <div class="contactSkills">
+        <div class="contact-info">
+          <div class="main-text">
+            <h2 class="heading">Contact Me</h2>
+            <span>get in touch with me</span>
+          </div>
+          <form id="contactForm">
+            <div class="input-box">
+              <input type="text" id="name" placeholder="Name" required />
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <input type="email" id="email" placeholder="Email" required />
+            <input
+              type="text"
+              id="phoneNumber"
+              placeholder="Phone Number"
+              required
+            />
+            <textarea
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+            <div class="formBtn">
+              <button type="button" class="btn" id="sendMessage">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- FINAL SECCION CONTACTO/ -->
+
+        <!-- skills bar/ -->
+        <div class="skills">
+          <div class="container">
+            <div class="skillBox">
+              <div class="main-text">
+                <h2 class="heading">My Skills</h2>
+                <span> I develop simple, intuitive and responsive </span>
+              </div>
+
+              <div class="control">
+                <div class="skills-toggle" data-toggle-box>
+                  <button class="toggle-btn active skills-btn" data-toggle-btn>
+                    Skills
+                  </button>
+
+                  <button class="toggle-btn tools-btn" data-toggle-btn>
+                    Tools
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-box" data-skills-box>
+              <ul class="skills-list">
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">HTML5</div>
+
+                    <div class="card-icon">
+                      <img src="assets/img/images/html5.png" alt="HTML5 logo" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">CSS3</div>
+
+                    <div class="card-icon">
+                      <img src="assets/img/images/css3.png" alt="CSS3 logo" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">JavaScript</div>
+
+                    <div class="card-icon">
+                      <img
+                        src="assets/img/images/javascript.png"
+                        alt="JavaScript logo"
+                      />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">React</div>
+
+                    <div class="card-icon">
+                      <img src="assets/img/images/react.png" alt="React logo" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Firebase</div>
+
+                    <div class="card-icon">
+                      <img
+                        src="assets/img/images/firebase.png"
+                        alt="Firebase logo"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="tools-list">
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Git</div>
+
+                    <div class="card-icon">
+                      <img src="assets/img/images/git.png" alt="Git logo" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Command</div>
+
+                    <div class="card-icon">
+                      <img
+                        src="assets/img/images/command.png"
+                        alt="Command Line logo"
+                      />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">VS Code</div>
+
+                    <div class="card-icon">
+                      <img
+                        src="assets/img/images/vs-code.png"
+                        alt="VS Code logo"
+                      />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Slack</div>
+
+                    <div class="card-icon">
+                      <img src="assets/img/images/slack.png" alt="Slack logo" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Photoshop</div>
+
+                    <div class="card-icon">
+                      <img
+                        src="assets/img/images/photoshop.png"
+                        alt="Photoshop logo"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="social2">
+        <a href="#das"><i class="bx bxl-facebook-circle"></i></a>
+        <a href="https://wa.me/+593963313195" target="_blank"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+        <a href="#dasnd"><i class="bx bxl-github"></i></a>
+        <a href="mailto:stalyin16@gmail.com" onclick="openEmail()"
+          ><i class="bx bx-envelope"></i
+        ></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#faq">FAQ</a>
+        </li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <p class="copyright">Cristian Peña | Ecuador-Otavalo</p>
+    </footer>
+
+    <div id="progress">
+      <span id="progress-value">
+        <i class="bx bxs-chevrons-up"></i>
+      </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
