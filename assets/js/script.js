@@ -44,6 +44,7 @@ const mixer = mixitup(".portfolio-gallery", {
   },
   animation: {
     duration: 500,
+    queueLimit: 30,
   },
 });
 
